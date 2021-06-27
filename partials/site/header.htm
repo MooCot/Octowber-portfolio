@@ -1,0 +1,48 @@
+<header class="site-header lazy" data-src="{{ 'assets/images/dest/MountainFullHD.jpg'|theme }} ">
+	<nav class="navbar">
+		<a href="https://www.steamowl.com.ua/" class="brand-title">StemOwl</a>
+		<a href="#" class="toggle-button">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</a>
+		<div class="navbar-links">
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="#portfolio">Портфолио</a></li>
+				<li><a href="#services">Услуги</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+				<li><a href="/calculator">Калькулятор</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="header-container">
+		<div class="header-composation">
+			<div class="left-text">
+				{% component 'contenteditor' file="intro/main/top-title.htm" fixture = "p" class = "top-title" %}
+				{% component 'contenteditor' file="intro/title.htm" fixture = "h1" class = "h1" %}
+				{% component 'contenteditor' file="intro/main/bottom-title.htm" fixture = "p" class = "bottom-title" %}
+			</div>
+			<div class="right-form">
+				<form action="index.php" method="post" class="login-form">
+					<label><input class="inputText" name="fio" type="text" placeholder="Username" name="user"></label>
+					<label><input class="inputText" name="email" type="text" placeholder="Email" name="email"></label>
+					<label><textarea class="inputText" name="comment" placeholder="Опишите вашу идею" cols="45"
+							rows="8"></textarea></label>
+					<a class="neon">
+						<input type="submit" value='ЗАКАЗАТЬ'>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</form>
+			</div>
+		</div>
+		<div class="down-button">
+			<a href="#my-content">
+				<i class="icon_icon_arrow_circle"></i>
+			</a>
+		</div>
+	</div>
+</header>

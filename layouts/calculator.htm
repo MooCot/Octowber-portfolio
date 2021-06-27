@@ -1,0 +1,49 @@
+description = "calculator layout"
+==
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!DOCTYPE html>
+	<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>SteamOwl - {{ this.page.title }}</title>
+		<meta name="description" content="SteamOwl">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" href="images/favicon.png">
+		<meta property="og:image" content="images/dest/preview.jpg">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{{ 'assets/css/app.min.css'|theme }}  ">
+		{% styles %}
+		{% component "SeoCmsPage" %}
+	</head>
+</head>
+
+<body>
+
+	<!-- Header -->
+	{% partial 'site/hCale' %}
+
+
+	<!-- Content -->
+	{% page %}
+
+
+	<!-- Contact -->
+	{% partial 'site/contact' %}
+
+	<!-- Footer -->
+	{% partial 'site/footer' %}
+
+	<!-- Scripts -->
+	<script src="	{{ 'assets/js/app.min.js'|theme }} "></script>
+
+	{% framework extras %}
+	{% scripts %}
+
+</body>
+
+</html>

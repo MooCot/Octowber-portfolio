@@ -1,0 +1,38 @@
+<section id="contacts" class="s-contacts">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="comp-h">
+					<h2 class="h2">Контакты</h2>
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="text-compasition">
+					{% component 'contenteditor' file="intro/contact/asc-text.htm" fixture = "p" %}
+					{% component 'contenteditor' file="intro/contact/info-as.htm" fixture = "p" %}
+					<img src="{{ 'assets/images/dest/icon_arrow_green.png'|theme }} " alt="(">
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+				<form action="index.php" method="post" class="login-form">
+					<label><input class="inputText" name="fio" type="text" placeholder="Username" name="user"></label>
+					<label><input class="inputText" name="email" type="text" placeholder="Email" name="email"></label>
+					<label><textarea class="inputText" name="comment" placeholder="Опишите вашу идею" cols="45"
+							rows="8"></textarea></label>
+					<a class="neon">
+						<input type="submit" value='ЗАКАЗАТЬ'>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</section>
